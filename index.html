@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="sample.css">
+  <title>CSS-Practice1</title>
+</head>
+
+<body>
+    <div id="doubutubyouin"></div>
+	<h1>INIAD動物病院</h1>
+	<img src="img/pet_hospital.png" alt="INIAD動物病院 ロゴ">
+    <div class="block">
+    <h2>対象動物</h2>
+    <ul>
+      <li>犬</li>
+      <li>猫</li>
+      <li>うさぎ</li>
+      <li>ハムスター</li>
+      <li>その他小動物</li>
+    </ul>
+    </div>
+
+    <hr>
+
+    <div class="block">
+    <h2>診療の案内</h2>
+    <table>
+      <tr>
+        <th>診療時間</th>
+        <th>月</th>
+        <th>火</th>
+        <th>水</th>
+        <th>木</th>
+        <th>金</th>
+        <th>土</th>
+        <th>日</th>
+      </tr>
+      <tr>
+        <td>08:30～12:00</td>
+        <td>●</td>
+        <td>●</td>
+        <td>●</td>
+        <td>●</td>
+        <td>●</td>
+        <td>●</td>
+        <td>休診</td>
+      </tr>
+      <tr>
+        <td>13:00～16:00</td>
+        <td colspan="6">手術・検査</td>
+        <td>休診</td>
+      </tr>
+      <tr>
+        <td>18:00～20:00</td>
+        <td>●</td>
+        <td>●</td>
+        <td>●</td>
+        <td>休診</td>
+        <td>●</td>
+        <td>●</td>
+        <td>休診</td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="block">
+    <h2>予約フォーム</h2>
+    <form>
+     <p>ご来院について
+       <select>
+         <option value="1">初診</option>
+         <option value="2">再診</option>
+       </select>
+     </p>
+     <p><label for="date">希望日</label><input type="date" id="date"></p>
+     <p>ペットの種類<input type="text"></p>
+     <p>氏名:<input type="text"></p>
+     <p>Email:<input type="email"></p>
+     <textarea cols="50" rows="10">その他・ご希望・ご質問ありましたらこちらへご入力ください。</textarea>
+      <p><input id="checkbox1" type="checkbox"><label for="checkbox1">内容を確認しました</label></p>
+      <p><input type="submit" value="提出"></p>
+    </form>
+    </div>
+  </body>
+</html>
